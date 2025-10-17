@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Header from '@/components/layout/header'
+import Footer from '@/components/layout/footer'
 import { 
   ArrowRight, 
   Brain, 
@@ -668,94 +669,7 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white">
-        <div className="border-t border-gray-800">
-          <div className="container-mobile md:container-desktop mx-auto px-4 py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-              <div className="col-span-1 md:col-span-2">
-                <div className="flex items-center space-x-2 mb-6">
-                  <div className="h-10 w-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white font-bold">F2</span>
-                  </div>
-                  <span className="text-2xl font-bold">F2XSaaS</span>
-                </div>
-                <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-                  Empowering businesses across Thailand and Southeast Asia through digital innovation 
-                  with enterprise-grade AI-powered solutions for the modern economy.
-                </p>
-                
-                <div className="space-y-3">
-                  <div className="flex items-center text-gray-400">
-                    <Globe className="h-4 w-4 mr-3" />
-                    <span className="text-sm">www.f2.co.th</span>
-                  </div>
-                  <div className="flex items-center text-gray-400">
-                    <Headphones className="h-4 w-4 mr-3" />
-                    <span className="text-sm">24/7 Enterprise Support</span>
-                  </div>
-                  <div className="flex items-center text-gray-400">
-                    <Award className="h-4 w-4 mr-3" />
-                    <span className="text-sm">ISO 27001 & SOC 2 Certified</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold mb-6 text-white">Products</h4>
-                <div className="space-y-3 text-gray-400">
-                  <Link href="/ai-platform" className="block hover:text-white transition-colors">AI Platform</Link>
-                  <Link href="/analytics" className="block hover:text-white transition-colors">Business Analytics</Link>
-                  <Link href="/automation" className="block hover:text-white transition-colors">Process Automation</Link>
-                  <Link href="/security" className="block hover:text-white transition-colors">Cybersecurity</Link>
-                  <Link href="/integrations" className="block hover:text-white transition-colors">Integrations</Link>
-                  <Link href="/api" className="block hover:text-white transition-colors">Developer API</Link>
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold mb-6 text-white">Solutions</h4>
-                <div className="space-y-3 text-gray-400">
-                  <Link href="/enterprise" className="block hover:text-white transition-colors">Enterprise</Link>
-                  <Link href="/banking" className="block hover:text-white transition-colors">Banking & Finance</Link>
-                  <Link href="/retail" className="block hover:text-white transition-colors">Retail & E-commerce</Link>
-                  <Link href="/manufacturing" className="block hover:text-white transition-colors">Manufacturing</Link>
-                  <Link href="/healthcare" className="block hover:text-white transition-colors">Healthcare</Link>
-                  <Link href="/government" className="block hover:text-white transition-colors">Government</Link>
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="font-semibold mb-6 text-white">Company</h4>
-                <div className="space-y-3 text-gray-400">
-                  <Link href="/about" className="block hover:text-white transition-colors">About F2</Link>
-                  <Link href="/careers" className="block hover:text-white transition-colors">Careers</Link>
-                  <Link href="/news" className="block hover:text-white transition-colors">News & Press</Link>
-                  <Link href="/events" className="block hover:text-white transition-colors">Events</Link>
-                  <Link href="/partners" className="block hover:text-white transition-colors">Partners</Link>
-                  <Link href="/contact" className="block hover:text-white transition-colors">Contact Us</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800">
-            <div className="container-mobile md:container-desktop mx-auto px-4 py-8">
-              <div className="flex flex-col md:flex-row justify-between items-center">
-                <div className="text-sm text-gray-500 mb-4 md:mb-0">
-                  © 2025 F2 Co., Ltd. All rights reserved. | Thailand's Leading Digital Transformation Platform
-                </div>
-                <div className="flex items-center space-x-6 text-sm text-gray-400">
-                  <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                  <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-                  <Link href="/security" className="hover:text-white transition-colors">Security</Link>
-                  <Link href="/compliance" className="hover:text-white transition-colors">Compliance</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
