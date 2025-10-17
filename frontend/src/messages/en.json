@@ -70,6 +70,9 @@
     "disconnected": "Disconnected"
   },
   "navigation": {
+    "tagline": "Next-generation AI solutions for modern business",
+    "signin": "Sign In",
+    "trial": "Start Free Trial",
     "home": "Home",
     "products": "Products",
     "solutions": "Solutions",

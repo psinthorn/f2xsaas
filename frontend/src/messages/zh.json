@@ -70,6 +70,9 @@
     "disconnected": "未连接"
   },
   "navigation": {
+    "tagline": "面向现代企业的下一代AI解决方案",
+    "signin": "登录",
+    "trial": "开始免费试用",
     "home": "首页",
     "products": "产品",
     "solutions": "解决方案",
