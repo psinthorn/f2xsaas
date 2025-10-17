@@ -1,0 +1,327 @@
+version: '3.8'
+
+services:
+  # =============================================================================
+  # DATABASE SERVICES
+  # =============================================================================
+  postgres:
+    image: postgres:15-alpine
+    container_name: f2xsaas-postgres
+    environment:
+      POSTGRES_DB: f2xsaas_dev
+      POSTGRES_USER: f2xsaas_user
+      POSTGRES_PASSWORD: your_secure_password
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infrastructure/docker/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - f2xsaas-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U f2xsaas_user -d f2xsaas_dev"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: f2xsaas-redis
+    command: redis-server --appendonly yes --replica-read-only no
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - f2xsaas-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # =============================================================================
+  # STORAGE AND FILE SERVICES
+  # =============================================================================
+  minio:
+    image: minio/minio:latest
+    container_name: f2xsaas-minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"  # API
+      - "9001:9001"  # Console
+    volumes:
+      - minio_data:/data
+    networks:
+      - f2xsaas-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  # =============================================================================
+  # MESSAGE QUEUE
+  # =============================================================================
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: f2xsaas-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: f2xsaas
+      RABBITMQ_DEFAULT_PASS: f2xsaas_queue_pass
+    ports:
+      - "5672:5672"  # AMQP
+      - "15672:15672"  # Management UI
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - f2xsaas-network
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # =============================================================================
+  # SEARCH AND ANALYTICS
+  # =============================================================================
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.8.0
+    container_name: f2xsaas-elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - f2xsaas-network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # =============================================================================
+  # MONITORING SERVICES
+  # =============================================================================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: f2xsaas-prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./infrastructure/monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    networks:
+      - f2xsaas-network
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: f2xsaas-grafana
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin123
+      GF_USERS_ALLOW_SIGN_UP: false
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./infrastructure/monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./infrastructure/monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - f2xsaas-network
+    depends_on:
+      - prometheus
+
+  # =============================================================================
+  # DEVELOPMENT TOOLS
+  # =============================================================================
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: f2xsaas-mailhog
+    ports:
+      - "1025:1025"  # SMTP
+      - "8025:8025"  # Web UI
+    networks:
+      - f2xsaas-network
+
+  adminer:
+    image: adminer:latest
+    container_name: f2xsaas-adminer
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+    ports:
+      - "8080:8080"
+    networks:
+      - f2xsaas-network
+    depends_on:
+      - postgres
+
+  # =============================================================================
+  # BACKEND SERVICES (Commented out for development)
+  # Uncomment when you want to run backend services in containers
+  # =============================================================================
+  
+  # api-gateway:
+  #   build:
+  #     context: ./backend/gateway
+  #     dockerfile: Dockerfile
+  #   container_name: f2xsaas-api-gateway
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - PORT=8000
+  #     - AUTH_SERVICE_URL=http://auth-service:8001
+  #     - USER_SERVICE_URL=http://user-service:8002
+  #     - AI_SERVICE_URL=http://ai-service:8003
+  #   networks:
+  #     - f2xsaas-network
+  #   depends_on:
+  #     - auth-service
+  #     - user-service
+  #     - ai-service
+
+  # auth-service:
+  #   build:
+  #     context: ./backend/services/auth
+  #     dockerfile: Dockerfile
+  #   container_name: f2xsaas-auth-service
+  #   ports:
+  #     - "8001:8001"
+  #   environment:
+  #     - PORT=8001
+  #     - DATABASE_URL=postgresql://f2xsaas_user:your_secure_password@postgres:5432/f2xsaas_dev
+  #     - REDIS_URL=redis://redis:6379/0
+  #     - JWT_SECRET=your-super-secret-jwt-key
+  #   networks:
+  #     - f2xsaas-network
+  #   depends_on:
+  #     - postgres
+  #     - redis
+
+  # user-service:
+  #   build:
+  #     context: ./backend/services/user
+  #     dockerfile: Dockerfile
+  #   container_name: f2xsaas-user-service
+  #   ports:
+  #     - "8002:8002"
+  #   environment:
+  #     - PORT=8002
+  #     - DATABASE_URL=postgresql://f2xsaas_user:your_secure_password@postgres:5432/f2xsaas_dev
+  #     - REDIS_URL=redis://redis:6379/0
+  #   networks:
+  #     - f2xsaas-network
+  #   depends_on:
+  #     - postgres
+  #     - redis
+
+  # ai-service:
+  #   build:
+  #     context: ./backend/services/ai
+  #     dockerfile: Dockerfile
+  #   container_name: f2xsaas-ai-service
+  #   ports:
+  #     - "8003:8003"
+  #   environment:
+  #     - PORT=8003
+  #     - DATABASE_URL=postgresql://f2xsaas_user:your_secure_password@postgres:5432/f2xsaas_dev
+  #     - REDIS_URL=redis://redis:6379/0
+  #     - OPENAI_API_KEY=your-openai-api-key
+  #   networks:
+  #     - f2xsaas-network
+  #   depends_on:
+  #     - postgres
+  #     - redis
+
+  # analytics-service:
+  #   build:
+  #     context: ./backend/services/analytics
+  #     dockerfile: Dockerfile
+  #   container_name: f2xsaas-analytics-service
+  #   ports:
+  #     - "8004:8004"
+  #   environment:
+  #     - PORT=8004
+  #     - DATABASE_URL=postgresql://f2xsaas_user:your_secure_password@postgres:5432/f2xsaas_dev
+  #     - ELASTICSEARCH_URL=http://elasticsearch:9200
+  #   networks:
+  #     - f2xsaas-network
+  #   depends_on:
+  #     - postgres
+  #     - elasticsearch
+
+  # notification-service:
+  #   build:
+  #     context: ./backend/services/notification
+  #     dockerfile: Dockerfile
+  #   container_name: f2xsaas-notification-service
+  #   ports:
+  #     - "8005:8005"
+  #   environment:
+  #     - PORT=8005
+  #     - RABBITMQ_URL=amqp://f2xsaas:f2xsaas_queue_pass@rabbitmq:5672/
+  #     - SMTP_HOST=mailhog
+  #     - SMTP_PORT=1025
+  #   networks:
+  #     - f2xsaas-network
+  #   depends_on:
+  #     - rabbitmq
+  #     - mailhog
+
+  # billing-service:
+  #   build:
+  #     context: ./backend/services/billing
+  #     dockerfile: Dockerfile
+  #   container_name: f2xsaas-billing-service
+  #   ports:
+  #     - "8006:8006"
+  #   environment:
+  #     - PORT=8006
+  #     - DATABASE_URL=postgresql://f2xsaas_user:your_secure_password@postgres:5432/f2xsaas_dev
+  #     - STRIPE_SECRET_KEY=your-stripe-secret-key
+  #   networks:
+  #     - f2xsaas-network
+  #   depends_on:
+  #     - postgres
+
+# =============================================================================
+# NETWORKS
+# =============================================================================
+networks:
+  f2xsaas-network:
+    driver: bridge
+
+# =============================================================================
+# VOLUMES
+# =============================================================================
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  minio_data:
+    driver: local
+  rabbitmq_data:
+    driver: local
+  elasticsearch_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
