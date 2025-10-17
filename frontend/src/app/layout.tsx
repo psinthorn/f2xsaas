@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { cn } from '@/lib/utils'
-import { ThemeProvider } from '@/components/theme-provider'
-import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -14,53 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'F2XSaaS - AI-Powered Digital Transformation Platform',
   description: 'Empowering your business through digital innovation with advanced AI solutions, automation, and analytics for modern enterprises.',
-  keywords: [
-    'AI',
-    'SaaS',
-    'Digital Transformation',
-    'Automation',
-    'Analytics',
-    'F2',
-    'Business Intelligence',
-    'Machine Learning'
-  ],
-  authors: [{ name: 'F2 Co., Ltd.' }],
-  creator: 'F2 Co., Ltd.',
-  publisher: 'F2 Co., Ltd.',
   metadataBase: new URL('https://f2.co.th'),
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://f2.co.th',
-    title: 'F2XSaaS - AI-Powered Digital Transformation Platform',
-    description: 'Empowering your business through digital innovation with advanced AI solutions.',
-    siteName: 'F2XSaaS',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'F2XSaaS Platform',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'F2XSaaS - AI-Powered Digital Transformation Platform',
-    description: 'Empowering your business through digital innovation with advanced AI solutions.',
-    images: ['/og-image.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
 }
 
 export const viewport: Viewport = {
@@ -75,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#3b82f6" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -92,19 +44,7 @@ export default function RootLayout({
           inter.variable
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={true}
-          disableTransitionOnChange={false}
-        >
-          <div className="relative flex min-h-screen flex-col">
-            <div className="flex-1">
-              {children}
-            </div>
-          </div>
-          <Toaster />
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   )

@@ -1,0 +1,466 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "download": "Download",
+    "upload": "Upload",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "view": "View",
+    "back": "Back",
+    "forward": "Forward",
+    "home": "Home",
+    "refresh": "Refresh",
+    "reset": "Reset",
+    "clear": "Clear",
+    "select": "Select",
+    "submit": "Submit",
+    "retry": "Retry",
+    "copy": "Copy",
+    "paste": "Paste",
+    "print": "Print",
+    "share": "Share",
+    "help": "Help",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "name": "Name",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone",
+    "company": "Company",
+    "address": "Address",
+    "city": "City",
+    "country": "Country",
+    "date": "Date",
+    "time": "Time",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "public": "Public",
+    "private": "Private",
+    "yes": "Yes",
+    "no": "No",
+    "true": "True",
+    "false": "False",
+    "on": "On",
+    "off": "Off",
+    "online": "Online",
+    "offline": "Offline",
+    "connected": "Connected",
+    "disconnected": "Disconnected"
+  },
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "resources": "Resources",
+    "about": "About",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "chat": "AI Chat",
+    "support": "Support",
+    "docs": "Documentation",
+    "blog": "Blog",
+    "news": "News",
+    "events": "Events",
+    "careers": "Careers",
+    "partners": "Partners"
+  },
+  "hero": {
+    "title": "Complete AI Platform",
+    "subtitle": "for Digital Transformation",
+    "description": "Transform your business with cutting-edge AI technology, intelligent automation, and deep analytics for modern enterprises",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "watchDemo": "Watch Demo",
+    "freeTrial": "14-Day Free Trial",
+    "noCredit": "No Credit Card Required",
+    "enterprise": "For Enterprise"
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need for digital transformation",
+    "aiAnalytics": {
+      "title": "AI Analytics",
+      "description": "Analyze data with AI that provides real-time insights"
+    },
+    "processAutomation": {
+      "title": "Process Automation",
+      "description": "Automated systems that reduce work time and increase efficiency"
+    },
+    "predictiveInsights": {
+      "title": "Predictive Insights",
+      "description": "Predict trends and help make data-driven decisions"
+    },
+    "enterpriseSecurity": {
+      "title": "Enterprise Security",
+      "description": "Enterprise-grade security you can trust"
+    },
+    "realTimeMonitoring": {
+      "title": "Real-time Monitoring",
+      "description": "Monitor systems and performance in real-time"
+    },
+    "seamlessIntegration": {
+      "title": "Seamless Integration",
+      "description": "Easily integrate with existing systems"
+    }
+  },
+  "stats": {
+    "customers": "Enterprise Customers",
+    "uptime": "Uptime SLA",
+    "experience": "Years Experience",
+    "support": "Support",
+    "countries": "Countries",
+    "dataProcessed": "Data Processed",
+    "automationSaved": "Time Saved",
+    "roiAverage": "Average ROI"
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": "Choose the plan that's right for your organization",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "save": "Save {percent}%",
+    "starter": {
+      "name": "Starter",
+      "description": "Perfect for SMEs and startups",
+      "price": "฿2,900",
+      "features": [
+        "Basic AI Analytics",
+        "10 Process Automations",
+        "Dashboard & Reports",
+        "API Integration",
+        "8x5 Support",
+        "5 Users"
+      ]
+    },
+    "professional": {
+      "name": "Professional",
+      "description": "For medium-sized businesses",
+      "price": "฿7,900",
+      "popular": "Most Popular",
+      "features": [
+        "Advanced AI Analytics",
+        "Unlimited Process Automation",
+        "Predictive Analytics",
+        "Advanced Security",
+        "Custom Dashboard",
+        "24/7 Support",
+        "25 Users",
+        "Advanced API"
+      ]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "For large organizations",
+      "price": "฿19,900",
+      "features": [
+        "Enterprise AI Analytics",
+        "Custom AI Models",
+        "Advanced Automation",
+        "Enterprise Security",
+        "Dedicated Support",
+        "On-premise Deployment",
+        "Unlimited Users",
+        "Custom Integration",
+        "99.9% SLA"
+      ]
+    },
+    "getStarted": "Get Started",
+    "contactSales": "Contact Sales",
+    "freeTrial": "Free Trial"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Access your dashboard and start your digital transformation",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "loginButton": "Sign In",
+      "signingIn": "Signing in...",
+      "orLoginWith": "Or sign in with",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up"
+    },
+    "register": {
+      "title": "Sign Up",
+      "subtitle": "Create an account and start your 14-day free trial",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "acceptTerms": "I accept the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "createAccount": "Create Free Account",
+      "creatingAccount": "Creating account...",
+      "orSignUpWith": "Or sign up with",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "noCreditCard": "No credit card required"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of operations and AI insights",
+    "keyMetrics": "Key Metrics",
+    "totalRevenue": "Total Revenue",
+    "newCustomers": "New Customers",
+    "conversionRate": "Conversion Rate",
+    "aiPerformance": "AI Performance",
+    "quickActions": "Quick Actions",
+    "recentActivities": "Recent Activities",
+    "aiServices": "AI Services",
+    "analyticsOverview": "Analytics Overview",
+    "startAnalysis": "Start New Analysis",
+    "setupAutomation": "Setup Automation",
+    "aiConsultation": "AI Consultation",
+    "downloadReport": "Download Report",
+    "refresh": "Refresh",
+    "export": "Export",
+    "last7Days": "Last 7 days",
+    "last30Days": "Last 30 days",
+    "last90Days": "Last 90 days"
+  },
+  "chat": {
+    "title": "F2 AI Assistant",
+    "subtitle": "Digital Transformation Expert",
+    "online": "Online",
+    "readyToHelp": "Ready to help",
+    "typeMessage": "Type your question or message...",
+    "aiThinking": "AI is thinking...",
+    "poweredBy": "Powered by F2 AI",
+    "dataUpdated": "Latest data updated",
+    "enterToSend": "Enter = Send",
+    "shiftEnterNewLine": "Shift + Enter = New line",
+    "exportChat": "Export Chat",
+    "newChat": "New Chat",
+    "quickActions": "Quick Actions",
+    "suggestions": "Suggestions",
+    "copy": "Copy",
+    "good": "Good",
+    "notGood": "Not Good",
+    "sent": "Sent",
+    "sending": "Sending..."
+  },
+  "footer": {
+    "description": "Complete AI platform for digital transformation that will change the way you do business",
+    "followUs": "Follow Us",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Get the latest product updates and digital transformation insights",
+      "placeholder": "Your email",
+      "subscribe": "Subscribe"
+    },
+    "sections": {
+      "products": "Products",
+      "solutions": "Solutions",
+      "resources": "Resources",
+      "company": "Company"
+    },
+    "links": {
+      "aiPlatform": "AI Platform",
+      "analytics": "Business Analytics",
+      "automation": "Process Automation",
+      "security": "Cybersecurity",
+      "enterprise": "Enterprise",
+      "banking": "Banking & Finance",
+      "retail": "Retail & E-commerce",
+      "manufacturing": "Manufacturing",
+      "documentation": "Documentation",
+      "apiReference": "API Reference",
+      "caseStudies": "Case Studies",
+      "webinars": "Webinars",
+      "blog": "Blog",
+      "aboutUs": "About Us",
+      "team": "Team",
+      "careers": "Careers",
+      "news": "News",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "securityPolicy": "Security"
+    },
+    "copyright": "© {year} F2 Co., Ltd. All rights reserved",
+    "contact": {
+      "address": "123 Silom Road, Silom, Bang Rak, Bangkok 10500",
+      "phone": "02-123-4567",
+      "email": "info@f2.co.th"
+    }
+  },
+  "about": {
+    "title": "Thailand's Leading Digital Transformation Provider",
+    "subtitle": "With over 15 years of expertise in AI technology and digital transformation, we help 500+ Thai organizations grow sustainably in the digital age",
+    "tabs": {
+      "story": "Our Story",
+      "values": "Values",
+      "team": "Team",
+      "timeline": "Timeline",
+      "certifications": "Certifications"
+    },
+    "story": {
+      "title": "Starting from a dream to transform Thai businesses",
+      "watchVideo": "Watch Our Story"
+    },
+    "values": {
+      "title": "Values That Drive Us",
+      "subtitle": "These values are at the heart of our work and customer service",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We use cutting-edge technology and devise new approaches to solve complex business problems"
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "Confidence in enterprise-level security systems and stable service"
+      },
+      "customerCare": {
+        "title": "Customer Care",
+        "description": "We understand customer needs and are committed to creating the best experience"
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "We help customers and teams grow together in the digital age"
+      }
+    },
+    "team": {
+      "title": "Our Leadership Team",
+      "subtitle": "Technology and business experts with over 200 years of combined experience"
+    },
+    "cta": {
+      "title": "Ready to Start Your Transformation Journey?",
+      "subtitle": "Join the digital revolution with F2XSaaS",
+      "freeConsultation": "Free Consultation",
+      "viewPlans": "View Plans"
+    }
+  },
+  "resources": {
+    "title": "Knowledge Resources for Transformation",
+    "subtitle": "Comprehensive knowledge base for organizational digital transformation with guides, case studies, and tools you need",
+    "searchPlaceholder": "Search resources...",
+    "filterResults": "Filter Results",
+    "featuredResources": "Featured Resources",
+    "allResources": "All Resources",
+    "categories": {
+      "all": "All",
+      "guides": "Guides",
+      "caseStudies": "Case Studies",
+      "whitepapers": "Whitepapers",
+      "webinars": "Webinars",
+      "tools": "Tools"
+    },
+    "types": {
+      "guide": "Guide",
+      "caseStudy": "Case Study",
+      "whitepaper": "Whitepaper",
+      "webinar": "Webinar",
+      "tool": "Tool"
+    },
+    "noResults": "No resources found matching your search",
+    "noResultsDescription": "Try using different keywords or select another category",
+    "resetSearch": "Reset Search",
+    "download": "Download",
+    "watchWebinar": "Watch Webinar",
+    "useTool": "Use Tool",
+    "quickTools": {
+      "title": "Quick Tools",
+      "subtitle": "Tools to help assess and plan organizational transformation",
+      "assessment": {
+        "title": "Digital Readiness Assessment",
+        "description": "Assess your organization's readiness for digital transformation",
+        "button": "Start Assessment"
+      },
+      "roiCalculator": {
+        "title": "ROI Calculator",
+        "description": "Calculate return on investment for AI and automation projects",
+        "button": "Calculate ROI"
+      },
+      "checklist": {
+        "title": "Implementation Checklist",
+        "description": "Checklist for executing digital transformation projects",
+        "button": "Download Checklist"
+      }
+    },
+    "newsletter": {
+      "title": "Weekly Resource Updates",
+      "subtitle": "Get the latest news and resources about Digital Transformation",
+      "placeholder": "Your email",
+      "subscribe": "Subscribe",
+      "noSpam": "We won't spam and you can unsubscribe anytime"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to provide consultation and help you with digital transformation",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "info": {
+      "address": {
+        "title": "Head Office",
+        "value": "123 Silom Road, Silom, Bang Rak, Bangkok 10500"
+      },
+      "phone": {
+        "title": "Contact Us",
+        "value": "Phone: 02-123-4567"
+      },
+      "social": {
+        "title": "Follow Us"
+      }
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "Page Not Found",
+      "description": "Sorry, the page you are looking for doesn't exist or has been moved",
+      "backHome": "Back to Home"
+    },
+    "500": {
+      "title": "Internal Server Error",
+      "description": "Something went wrong on our end. Please try again later",
+      "retry": "Try Again"
+    }
+  },
+  "validation": {
+    "required": "Please enter {field}",
+    "email": "Invalid email format",
+    "minLength": "{field} must be at least {min} characters",
+    "maxLength": "{field} must not exceed {max} characters",
+    "passwordMismatch": "Passwords do not match",
+    "invalidPhone": "Invalid phone number"
+  }
+}

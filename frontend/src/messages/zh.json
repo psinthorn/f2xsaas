@@ -1,0 +1,466 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "search": "搜索",
+    "filter": "筛选",
+    "export": "导出",
+    "import": "导入",
+    "download": "下载",
+    "upload": "上传",
+    "next": "下一步",
+    "previous": "上一步",
+    "close": "关闭",
+    "open": "打开",
+    "view": "查看",
+    "back": "返回",
+    "forward": "前进",
+    "home": "首页",
+    "refresh": "刷新",
+    "reset": "重置",
+    "clear": "清除",
+    "select": "选择",
+    "submit": "提交",
+    "retry": "重试",
+    "copy": "复制",
+    "paste": "粘贴",
+    "print": "打印",
+    "share": "分享",
+    "help": "帮助",
+    "settings": "设置",
+    "profile": "个人资料",
+    "logout": "退出登录",
+    "login": "登录",
+    "register": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "username": "用户名",
+    "name": "姓名",
+    "firstName": "名",
+    "lastName": "姓",
+    "phone": "电话",
+    "company": "公司",
+    "address": "地址",
+    "city": "城市",
+    "country": "国家",
+    "date": "日期",
+    "time": "时间",
+    "status": "状态",
+    "active": "活跃",
+    "inactive": "非活跃",
+    "enabled": "已启用",
+    "disabled": "已禁用",
+    "public": "公开",
+    "private": "私有",
+    "yes": "是",
+    "no": "否",
+    "true": "真",
+    "false": "假",
+    "on": "开",
+    "off": "关",
+    "online": "在线",
+    "offline": "离线",
+    "connected": "已连接",
+    "disconnected": "未连接"
+  },
+  "navigation": {
+    "home": "首页",
+    "products": "产品",
+    "solutions": "解决方案",
+    "pricing": "价格",
+    "resources": "资源",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "dashboard": "仪表板",
+    "chat": "AI对话",
+    "support": "支持",
+    "docs": "文档",
+    "blog": "博客",
+    "news": "新闻",
+    "events": "活动",
+    "careers": "招聘",
+    "partners": "合作伙伴"
+  },
+  "hero": {
+    "title": "完整的AI平台",
+    "subtitle": "用于数字化转型",
+    "description": "使用尖端AI技术、智能自动化和深度分析为现代企业转型您的业务",
+    "getStarted": "开始使用",
+    "learnMore": "了解更多",
+    "watchDemo": "观看演示",
+    "freeTrial": "14天免费试用",
+    "noCredit": "无需信用卡",
+    "enterprise": "企业版"
+  },
+  "features": {
+    "title": "强大功能",
+    "subtitle": "数字化转型所需的一切",
+    "aiAnalytics": {
+      "title": "AI分析",
+      "description": "使用AI分析数据，提供实时洞察"
+    },
+    "processAutomation": {
+      "title": "流程自动化",
+      "description": "自动化系统，减少工作时间，提高效率"
+    },
+    "predictiveInsights": {
+      "title": "预测洞察",
+      "description": "预测趋势，帮助做出数据驱动的决策"
+    },
+    "enterpriseSecurity": {
+      "title": "企业安全",
+      "description": "您可以信赖的企业级安全"
+    },
+    "realTimeMonitoring": {
+      "title": "实时监控",
+      "description": "实时监控系统和性能"
+    },
+    "seamlessIntegration": {
+      "title": "无缝集成",
+      "description": "轻松与现有系统集成"
+    }
+  },
+  "stats": {
+    "customers": "企业客户",
+    "uptime": "正常运行时间SLA",
+    "experience": "年经验",
+    "support": "支持",
+    "countries": "国家",
+    "dataProcessed": "处理的数据",
+    "automationSaved": "节省的时间",
+    "roiAverage": "平均投资回报率"
+  },
+  "pricing": {
+    "title": "价格方案",
+    "subtitle": "选择适合您组织的方案",
+    "monthly": "月付",
+    "annually": "年付",
+    "save": "节省{percent}%",
+    "starter": {
+      "name": "入门版",
+      "description": "适合中小企业和初创公司",
+      "price": "฿2,900",
+      "features": [
+        "基础AI分析",
+        "10个流程自动化",
+        "仪表板和报告",
+        "API集成",
+        "8x5支持",
+        "5个用户"
+      ]
+    },
+    "professional": {
+      "name": "专业版",
+      "description": "适合中型企业",
+      "price": "฿7,900",
+      "popular": "最受欢迎",
+      "features": [
+        "高级AI分析",
+        "无限流程自动化",
+        "预测分析",
+        "高级安全",
+        "自定义仪表板",
+        "24/7支持",
+        "25个用户",
+        "高级API"
+      ]
+    },
+    "enterprise": {
+      "name": "企业版",
+      "description": "适合大型组织",
+      "price": "฿19,900",
+      "features": [
+        "企业AI分析",
+        "自定义AI模型",
+        "高级自动化",
+        "企业安全",
+        "专属支持",
+        "本地部署",
+        "无限用户",
+        "自定义集成",
+        "99.9% SLA"
+      ]
+    },
+    "getStarted": "开始使用",
+    "contactSales": "联系销售",
+    "freeTrial": "免费试用"
+  },
+  "auth": {
+    "login": {
+      "title": "登录",
+      "subtitle": "访问您的仪表板并开始数字化转型",
+      "email": "邮箱",
+      "password": "密码",
+      "rememberMe": "记住我",
+      "forgotPassword": "忘记密码？",
+      "loginButton": "登录",
+      "signingIn": "登录中...",
+      "orLoginWith": "或使用以下方式登录",
+      "noAccount": "没有账户？",
+      "signUp": "注册"
+    },
+    "register": {
+      "title": "注册",
+      "subtitle": "创建账户并开始14天免费试用",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "邮箱",
+      "company": "公司",
+      "phone": "电话",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "acceptTerms": "我接受",
+      "termsOfService": "服务条款",
+      "and": "和",
+      "privacyPolicy": "隐私政策",
+      "createAccount": "创建免费账户",
+      "creatingAccount": "创建账户中...",
+      "orSignUpWith": "或使用以下方式注册",
+      "haveAccount": "已有账户？",
+      "signIn": "登录",
+      "noCreditCard": "无需信用卡"
+    }
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "subtitle": "运营概览和AI洞察",
+    "keyMetrics": "关键指标",
+    "totalRevenue": "总收入",
+    "newCustomers": "新客户",
+    "conversionRate": "转化率",
+    "aiPerformance": "AI性能",
+    "quickActions": "快速操作",
+    "recentActivities": "最近活动",
+    "aiServices": "AI服务",
+    "analyticsOverview": "分析概览",
+    "startAnalysis": "开始新分析",
+    "setupAutomation": "设置自动化",
+    "aiConsultation": "AI咨询",
+    "downloadReport": "下载报告",
+    "refresh": "刷新",
+    "export": "导出",
+    "last7Days": "过去7天",
+    "last30Days": "过去30天",
+    "last90Days": "过去90天"
+  },
+  "chat": {
+    "title": "F2 AI助手",
+    "subtitle": "数字化转型专家",
+    "online": "在线",
+    "readyToHelp": "准备帮助",
+    "typeMessage": "输入您的问题或消息...",
+    "aiThinking": "AI正在思考...",
+    "poweredBy": "由F2 AI驱动",
+    "dataUpdated": "最新数据更新",
+    "enterToSend": "回车 = 发送",
+    "shiftEnterNewLine": "Shift + 回车 = 换行",
+    "exportChat": "导出对话",
+    "newChat": "新对话",
+    "quickActions": "快速操作",
+    "suggestions": "建议",
+    "copy": "复制",
+    "good": "好",
+    "notGood": "不好",
+    "sent": "已发送",
+    "sending": "发送中..."
+  },
+  "footer": {
+    "description": "完整的AI平台，用于数字化转型，将改变您的业务方式",
+    "followUs": "关注我们",
+    "newsletter": {
+      "title": "保持更新",
+      "description": "获取最新产品更新和数字化转型洞察",
+      "placeholder": "您的邮箱",
+      "subscribe": "订阅"
+    },
+    "sections": {
+      "products": "产品",
+      "solutions": "解决方案",
+      "resources": "资源",
+      "company": "公司"
+    },
+    "links": {
+      "aiPlatform": "AI平台",
+      "analytics": "商业分析",
+      "automation": "流程自动化",
+      "security": "网络安全",
+      "enterprise": "企业版",
+      "banking": "银行与金融",
+      "retail": "零售与电商",
+      "manufacturing": "制造业",
+      "documentation": "文档",
+      "apiReference": "API参考",
+      "caseStudies": "案例研究",
+      "webinars": "网络研讨会",
+      "blog": "博客",
+      "aboutUs": "关于我们",
+      "team": "团队",
+      "careers": "招聘",
+      "news": "新闻",
+      "contact": "联系",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "cookies": "Cookie政策",
+      "securityPolicy": "安全"
+    },
+    "copyright": "© {year} F2 Co., Ltd. 版权所有",
+    "contact": {
+      "address": "泰国曼谷邦叻县席隆路123号席隆 10500",
+      "phone": "02-123-4567",
+      "email": "info@f2.co.th"
+    }
+  },
+  "about": {
+    "title": "泰国领先的数字化转型提供商",
+    "subtitle": "凭借15年以上的AI技术和数字化转型专业知识，我们帮助500多家泰国组织在数字时代可持续发展",
+    "tabs": {
+      "story": "我们的故事",
+      "values": "价值观",
+      "team": "团队",
+      "timeline": "时间线",
+      "certifications": "认证"
+    },
+    "story": {
+      "title": "从改变泰国企业的梦想开始",
+      "watchVideo": "观看我们的故事"
+    },
+    "values": {
+      "title": "驱动我们的价值观",
+      "subtitle": "这些价值观是我们工作和客户服务的核心",
+      "innovation": {
+        "title": "创新",
+        "description": "我们使用尖端技术并设计新方法来解决复杂的业务问题"
+      },
+      "reliability": {
+        "title": "可靠性",
+        "description": "对企业级安全系统和稳定服务的信心"
+      },
+      "customerCare": {
+        "title": "客户关怀",
+        "description": "我们了解客户需求，致力于创造最佳体验"
+      },
+      "growth": {
+        "title": "增长",
+        "description": "我们帮助客户和团队在数字时代共同成长"
+      }
+    },
+    "team": {
+      "title": "我们的领导团队",
+      "subtitle": "拥有200多年综合经验的技术和商业专家"
+    },
+    "cta": {
+      "title": "准备开始您的转型之旅了吗？",
+      "subtitle": "与F2XSaaS一起加入数字革命",
+      "freeConsultation": "免费咨询",
+      "viewPlans": "查看方案"
+    }
+  },
+  "resources": {
+    "title": "转型知识资源",
+    "subtitle": "组织数字化转型的综合知识库，包含您需要的指南、案例研究和工具",
+    "searchPlaceholder": "搜索资源...",
+    "filterResults": "筛选结果",
+    "featuredResources": "精选资源",
+    "allResources": "所有资源",
+    "categories": {
+      "all": "全部",
+      "guides": "指南",
+      "caseStudies": "案例研究",
+      "whitepapers": "白皮书",
+      "webinars": "网络研讨会",
+      "tools": "工具"
+    },
+    "types": {
+      "guide": "指南",
+      "caseStudy": "案例研究",
+      "whitepaper": "白皮书",
+      "webinar": "网络研讨会",
+      "tool": "工具"
+    },
+    "noResults": "未找到与您搜索匹配的资源",
+    "noResultsDescription": "尝试使用不同的关键词或选择其他类别",
+    "resetSearch": "重置搜索",
+    "download": "下载",
+    "watchWebinar": "观看网络研讨会",
+    "useTool": "使用工具",
+    "quickTools": {
+      "title": "快速工具",
+      "subtitle": "帮助评估和规划组织转型的工具",
+      "assessment": {
+        "title": "数字化准备度评估",
+        "description": "评估您的组织数字化转型准备度",
+        "button": "开始评估"
+      },
+      "roiCalculator": {
+        "title": "ROI计算器",
+        "description": "计算AI和自动化项目的投资回报率",
+        "button": "计算ROI"
+      },
+      "checklist": {
+        "title": "实施清单",
+        "description": "执行数字化转型项目的清单",
+        "button": "下载清单"
+      }
+    },
+    "newsletter": {
+      "title": "每周资源更新",
+      "subtitle": "获取有关数字化转型的最新新闻和资源",
+      "placeholder": "您的邮箱",
+      "subscribe": "订阅",
+      "noSpam": "我们不会发送垃圾邮件，您可以随时取消订阅"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "准备提供咨询并帮助您进行数字化转型",
+    "form": {
+      "name": "全名",
+      "email": "邮箱",
+      "company": "公司",
+      "phone": "电话",
+      "subject": "主题",
+      "message": "消息",
+      "send": "发送消息",
+      "sending": "发送中..."
+    },
+    "info": {
+      "address": {
+        "title": "总部",
+        "value": "泰国曼谷邦叻县席隆路123号席隆 10500"
+      },
+      "phone": {
+        "title": "联系我们",
+        "value": "电话：02-123-4567"
+      },
+      "social": {
+        "title": "关注我们"
+      }
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "页面未找到",
+      "description": "抱歉，您要查找的页面不存在或已被移动",
+      "backHome": "返回首页"
+    },
+    "500": {
+      "title": "内部服务器错误",
+      "description": "我们这边出了点问题。请稍后再试",
+      "retry": "重试"
+    }
+  },
+  "validation": {
+    "required": "请输入{field}",
+    "email": "邮箱格式无效",
+    "minLength": "{field}必须至少{min}个字符",
+    "maxLength": "{field}不得超过{max}个字符",
+    "passwordMismatch": "密码不匹配",
+    "invalidPhone": "电话号码无效"
+  }
+}

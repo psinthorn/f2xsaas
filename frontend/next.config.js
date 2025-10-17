@@ -1,8 +1,7 @@
+const withNextIntl = require('next-intl/plugin')('./src/i18n.ts');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   images: {
     domains: [
       'localhost',
@@ -13,9 +12,9 @@ const nextConfig = {
     ],
   },
   env: {
-    CUSTOM_KEY: process.env.CUSTOM_KEY,
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    CUSTOM_KEY: process.env.CUSTOM_KEY || '',
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000',
   },
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig);

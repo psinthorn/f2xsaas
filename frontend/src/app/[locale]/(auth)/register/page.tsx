@@ -19,7 +19,6 @@ import {
   Zap,
   Brain,
   CheckCircle2,
-  Google,
   Github,
   Linkedin,
   Users,
@@ -379,7 +378,7 @@ export default function RegisterPage() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <Button variant="outline" className="h-10">
-                    <Google className="w-4 h-4" />
+                    <span className="w-4 h-4 text-red-500 font-bold">G</span>
                   </Button>
                   <Button variant="outline" className="h-10">
                     <Github className="w-4 h-4" />

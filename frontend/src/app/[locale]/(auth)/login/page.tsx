@@ -16,7 +16,6 @@ import {
   Zap,
   Brain,
   CheckCircle2,
-  Google,
   Github,
   Linkedin
 } from 'lucide-react';
@@ -211,7 +210,7 @@ export default function LoginPage() {
 
                 <div className="grid grid-cols-3 gap-3">
                   <Button variant="outline" className="h-12">
-                    <Google className="w-5 h-5" />
+                    <span className="w-5 h-5 text-red-500 font-bold">G</span>
                   </Button>
                   <Button variant="outline" className="h-12">
                     <Github className="w-5 h-5" />

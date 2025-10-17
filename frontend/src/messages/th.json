@@ -1,0 +1,466 @@
+{
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "success": "สำเร็จ",
+    "cancel": "ยกเลิก",
+    "confirm": "ยืนยัน",
+    "save": "บันทึก",
+    "edit": "แก้ไข",
+    "delete": "ลบ",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "export": "ส่งออก",
+    "import": "นำเข้า",
+    "download": "ดาวน์โหลด",
+    "upload": "อัปโหลด",
+    "next": "ถัดไป",
+    "previous": "ก่อนหน้า",
+    "close": "ปิด",
+    "open": "เปิด",
+    "view": "ดู",
+    "back": "กลับ",
+    "forward": "ไปข้างหน้า",
+    "home": "หน้าแรก",
+    "refresh": "รีเฟรช",
+    "reset": "รีเซ็ต",
+    "clear": "ล้าง",
+    "select": "เลือก",
+    "submit": "ส่ง",
+    "retry": "ลองใหม่",
+    "copy": "คัดลอก",
+    "paste": "วาง",
+    "print": "พิมพ์",
+    "share": "แชร์",
+    "help": "ช่วยเหลือ",
+    "settings": "การตั้งค่า",
+    "profile": "โปรไฟล์",
+    "logout": "ออกจากระบบ",
+    "login": "เข้าสู่ระบบ",
+    "register": "สมัครสมาชิก",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "username": "ชื่อผู้ใช้",
+    "name": "ชื่อ",
+    "firstName": "ชื่อ",
+    "lastName": "นามสกุล",
+    "phone": "เบอร์โทรศัพท์",
+    "company": "บริษัท",
+    "address": "ที่อยู่",
+    "city": "เมือง",
+    "country": "ประเทศ",
+    "date": "วันที่",
+    "time": "เวลา",
+    "status": "สถานะ",
+    "active": "ทำงาน",
+    "inactive": "หยุดทำงาน",
+    "enabled": "เปิดใช้งาน",
+    "disabled": "ปิดใช้งาน",
+    "public": "สาธารณะ",
+    "private": "ส่วนตัว",
+    "yes": "ใช่",
+    "no": "ไม่ใช่",
+    "true": "จริง",
+    "false": "เท็จ",
+    "on": "เปิด",
+    "off": "ปิด",
+    "online": "ออนไลน์",
+    "offline": "ออฟไลน์",
+    "connected": "เชื่อมต่อ",
+    "disconnected": "ไม่ได้เชื่อมต่อ"
+  },
+  "navigation": {
+    "home": "หน้าแรก",
+    "products": "ผลิตภัณฑ์",
+    "solutions": "โซลูชัน",
+    "pricing": "ราคา",
+    "resources": "ทรัพยากร",
+    "about": "เกี่ยวกับเรา",
+    "contact": "ติดต่อเรา",
+    "dashboard": "แดชบอร์ด",
+    "chat": "แชทบอท AI",
+    "support": "ซัพพอร์ต",
+    "docs": "เอกสาร",
+    "blog": "บล็อก",
+    "news": "ข่าวสาร",
+    "events": "กิจกรรม",
+    "careers": "ร่วมงานกับเรา",
+    "partners": "พันธมิตร"
+  },
+  "hero": {
+    "title": "แพลตฟอร์ม AI ครบวงจร",
+    "subtitle": "สำหรับการปรับเปลี่ยนดิจิทัล",
+    "description": "เปลี่ยนธุรกิจของคุณด้วยเทคโนโลジี AI ที่ล้ำสมัย ระบบอัตโนมัติที่ชาญฉลาด และการวิเคราะห์ข้อมูลเชิงลึกสำหรับองค์กรยุคใหม่",
+    "getStarted": "เริ่มต้นใช้งาน",
+    "learnMore": "เรียนรู้เพิ่มเติม",
+    "watchDemo": "ดูตัวอย่าง",
+    "freeTrial": "ทดลองใช้ฟรี 14 วัน",
+    "noCredit": "ไม่ต้องใช้บัตรเครดิต",
+    "enterprise": "สำหรับองค์กร"
+  },
+  "features": {
+    "title": "ฟีเจอร์ที่ทรงพลัง",
+    "subtitle": "ทุกสิ่งที่คุณต้องการสำหรับการปรับเปลี่ยนดิจิทัล",
+    "aiAnalytics": {
+      "title": "AI Analytics",
+      "description": "วิเคราะห์ข้อมูลด้วย AI ที่ให้ข้อมูลเชิงลึกแบบ Real-time"
+    },
+    "processAutomation": {
+      "title": "Process Automation",
+      "description": "ระบบอัตโนมัติที่ลดเวลาทำงานและเพิ่มประสิทธิภาพ"
+    },
+    "predictiveInsights": {
+      "title": "Predictive Insights",
+      "description": "ทำนายแนวโน้มและช่วยตัดสินใจด้วยข้อมูล"
+    },
+    "enterpriseSecurity": {
+      "title": "Enterprise Security",
+      "description": "ความปลอดภัยระดับองค์กรที่คุณวางใจได้"
+    },
+    "realTimeMonitoring": {
+      "title": "Real-time Monitoring",
+      "description": "ติดตามระบบและประสิทธิภาพแบบ Real-time"
+    },
+    "seamlessIntegration": {
+      "title": "Seamless Integration",
+      "description": "เชื่อมต่อกับระบบที่มีอยู่ได้อย่างง่ายดาย"
+    }
+  },
+  "stats": {
+    "customers": "ลูกค้าองค์กร",
+    "uptime": "Uptime SLA",
+    "experience": "ปีประสบการณ์",
+    "support": "ซัพพอร์ต",
+    "countries": "ประเทศ",
+    "dataProcessed": "ข้อมูลที่ประมวลผล",
+    "automationSaved": "เวลาที่ประหยัดได้",
+    "roiAverage": "ROI เฉลี่ย"
+  },
+  "pricing": {
+    "title": "แผนการใช้งาน",
+    "subtitle": "เลือกแผนที่เหมาะสมกับองค์กรของคุณ",
+    "monthly": "รายเดือน",
+    "annually": "รายปี",
+    "save": "ประหยัด {percent}%",
+    "starter": {
+      "name": "Starter",
+      "description": "เหมาะสำหรับ SME และสตาร์ทอัป",
+      "price": "฿2,900",
+      "features": [
+        "AI Analytics พื้นฐาน",
+        "Process Automation 10 กระบวนการ",
+        "Dashboard และรายงาน",
+        "API Integration",
+        "ซัพพอร์ต 8x5",
+        "ผู้ใช้งาน 5 คน"
+      ]
+    },
+    "professional": {
+      "name": "Professional",
+      "description": "สำหรับธุรกิจขนาดกลาง",
+      "price": "฿7,900",
+      "popular": "ยอดนิยม",
+      "features": [
+        "AI Analytics ขั้นสูง",
+        "Process Automation ไม่จำกัด",
+        "Predictive Analytics",
+        "Advanced Security",
+        "Custom Dashboard",
+        "ซัพพอร์ต 24/7",
+        "ผู้ใช้งาน 25 คน",
+        "API ขั้นสูง"
+      ]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "สำหรับองค์กรขนาดใหญ่",
+      "price": "฿19,900",
+      "features": [
+        "AI Analytics Enterprise",
+        "Custom AI Models",
+        "Advanced Automation",
+        "Enterprise Security",
+        "Dedicated Support",
+        "On-premise Deployment",
+        "ผู้ใช้งานไม่จำกัด",
+        "Custom Integration",
+        "SLA 99.9%"
+      ]
+    },
+    "getStarted": "เริ่มต้นใช้งาน",
+    "contactSales": "ติดต่อฝ่ายขาย",
+    "freeTrial": "ทดลองใช้ฟรี"
+  },
+  "auth": {
+    "login": {
+      "title": "เข้าสู่ระบบ",
+      "subtitle": "เข้าสู่แดชบอร์ดของคุณและเริ่มต้นการปรับเปลี่ยนดิจิทัล",
+      "email": "อีเมล",
+      "password": "รหัสผ่าน",
+      "rememberMe": "จดจำการเข้าสู่ระบบ",
+      "forgotPassword": "ลืมรหัสผ่าน?",
+      "loginButton": "เข้าสู่ระบบ",
+      "signingIn": "กำลังเข้าสู่ระบบ...",
+      "orLoginWith": "หรือเข้าสู่ระบบด้วย",
+      "noAccount": "ยังไม่มีบัญชี?",
+      "signUp": "สมัครสมาชิก"
+    },
+    "register": {
+      "title": "สมัครสมาชิก",
+      "subtitle": "สร้างบัญชีและเริ่มต้นทดลองใช้ฟรี 14 วัน",
+      "firstName": "ชื่อ",
+      "lastName": "นามสกุล",
+      "email": "อีเมล",
+      "company": "บริษัท",
+      "phone": "เบอร์โทรศัพท์",
+      "password": "รหัสผ่าน",
+      "confirmPassword": "ยืนยันรหัสผ่าน",
+      "acceptTerms": "ฉันยอมรับ",
+      "termsOfService": "ข้อกำหนดและเงื่อนไข",
+      "and": "และ",
+      "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+      "createAccount": "สร้างบัญชีฟรี",
+      "creatingAccount": "กำลังสร้างบัญชี...",
+      "orSignUpWith": "หรือสมัครด้วย",
+      "haveAccount": "มีบัญชีอยู่แล้ว?",
+      "signIn": "เข้าสู่ระบบ",
+      "noCreditCard": "ไม่ต้องใช้บัตรเครดิต"
+    }
+  },
+  "dashboard": {
+    "title": "แดชบอร์ด",
+    "subtitle": "ภาพรวมการดำเนินงานและข้อมูลเชิงลึกจาก AI",
+    "keyMetrics": "ตัวชี้วัดหลัก",
+    "totalRevenue": "รายได้รวม",
+    "newCustomers": "ลูกค้าใหม่",
+    "conversionRate": "อัตราการแปลง",
+    "aiPerformance": "ประสิทธิภาพ AI",
+    "quickActions": "การดำเนินการด่วน",
+    "recentActivities": "กิจกรรมล่าสุด",
+    "aiServices": "บริการ AI",
+    "analyticsOverview": "ภาพรวมการวิเคราะห์",
+    "startAnalysis": "เริ่มการวิเคราะห์ใหม่",
+    "setupAutomation": "ตั้งค่า Automation",
+    "aiConsultation": "ปรึกษา AI",
+    "downloadReport": "ดาวน์โหลดรายงาน",
+    "refresh": "รีเฟรช",
+    "export": "Export",
+    "last7Days": "7 วันที่ผ่านมา",
+    "last30Days": "30 วันที่ผ่านมา",
+    "last90Days": "90 วันที่ผ่านมา"
+  },
+  "chat": {
+    "title": "F2 AI Assistant",
+    "subtitle": "ผู้เชี่ยวชาญด้าน Digital Transformation",
+    "online": "ออนไลน์",
+    "readyToHelp": "พร้อมช่วยเหลือ",
+    "typeMessage": "พิมพ์คำถามหรือข้อความของคุณ...",
+    "aiThinking": "AI กำลังคิด...",
+    "poweredBy": "ขับเคลื่อนโดย F2 AI",
+    "dataUpdated": "ข้อมูลอัปเดตล่าสุด",
+    "enterToSend": "Enter = ส่ง",
+    "shiftEnterNewLine": "Shift + Enter = บรรทัดใหม่",
+    "exportChat": "Export Chat",
+    "newChat": "New Chat",
+    "quickActions": "การดำเนินการด่วน",
+    "suggestions": "คำแนะนำ",
+    "copy": "คัดลอก",
+    "good": "ดี",
+    "notGood": "ไม่ดี",
+    "sent": "ส่งแล้ว",
+    "sending": "กำลังส่ง..."
+  },
+  "footer": {
+    "description": "แพลตฟอร์ม AI ครบวงจรสำหรับการปรับเปลี่ยนดิจิทัลที่จะเปลี่ยนวิธีการทำธุรกิจของคุณ",
+    "followUs": "ติดตามเรา",
+    "newsletter": {
+      "title": "รับข่าวสารล่าสุด",
+      "description": "อัปเดตผลิตภัณฑ์ใหม่ และข้อมูลเชิงลึกด้าน Digital Transformation",
+      "placeholder": "อีเมลของคุณ",
+      "subscribe": "สมัครรับข่าวสาร"
+    },
+    "sections": {
+      "products": "ผลิตภัณฑ์",
+      "solutions": "โซลูชัน",
+      "resources": "ทรัพยากร",
+      "company": "บริษัท"
+    },
+    "links": {
+      "aiPlatform": "AI Platform",
+      "analytics": "Business Analytics",
+      "automation": "Process Automation",
+      "security": "Cybersecurity",
+      "enterprise": "Enterprise",
+      "banking": "Banking & Finance",
+      "retail": "Retail & E-commerce",
+      "manufacturing": "Manufacturing",
+      "documentation": "Documentation",
+      "apiReference": "API Reference",
+      "caseStudies": "Case Studies",
+      "webinars": "Webinars",
+      "blog": "Blog",
+      "aboutUs": "เกี่ยวกับเรา",
+      "team": "ทีมงาน",
+      "careers": "Careers",
+      "news": "ข่าวสาร",
+      "contact": "ติดต่อเรา",
+      "privacy": "นโยบายความเป็นส่วนตัว",
+      "terms": "ข้อกำหนดการใช้งาน",
+      "cookies": "นโยบายคุกกี้",
+      "securityPolicy": "ความปลอดภัย"
+    },
+    "copyright": "© {year} F2 Co., Ltd. สงวนลิขสิทธิ์",
+    "contact": {
+      "address": "123 ถนนสีลม แขวงสีลม เขตบางรัก กรุงเทพมหานคร 10500",
+      "phone": "02-123-4567",
+      "email": "info@f2.co.th"
+    }
+  },
+  "about": {
+    "title": "ผู้นำ Digital Transformation ในประเทศไทย",
+    "subtitle": "มากกว่า 15 ปีแห่งการเป็นผู้นำด้านเทคโนโลยี AI และการปรับเปลี่ยนดิจิทัล เราช่วยให้องค์กรไทยกว่า 500+ แห่งเติบโตอย่างยั่งยืนในยุคดิจิทัล",
+    "tabs": {
+      "story": "เรื่องราวของเรา",
+      "values": "ค่านิยม",
+      "team": "ทีมงาน",
+      "timeline": "ประวัติศาสตร์",
+      "certifications": "การรับรอง"
+    },
+    "story": {
+      "title": "เริ่มต้นจากความฝันที่จะเปลี่ยนแปลงธุรกิจไทย",
+      "watchVideo": "ดูวิดีโอเรื่องราว"
+    },
+    "values": {
+      "title": "ค่านิยมที่ขับเคลื่อนเรา",
+      "subtitle": "ค่านิยมเหล่านี้เป็นหัวใจของการทำงานและการให้บริการลูกค้าของเรา",
+      "innovation": {
+        "title": "นวัตกรรม",
+        "description": "เราใช้เทคโนโลยีล้ำสมัยและคิดค้นแนวทางใหม่ๆ เพื่อแก้ปัญหาทางธุรกิจที่ซับซ้อน"
+      },
+      "reliability": {
+        "title": "ความน่าเชื่อถือ",
+        "description": "มั่นใจในระบบรักษาความปลอดภัยระดับ Enterprise และการให้บริการที่เสถียร"
+      },
+      "customerCare": {
+        "title": "ใส่ใจลูกค้า",
+        "description": "เราเข้าใจความต้องการของลูกค้าและมุ่งมั่นสร้างประสบการณ์ที่ดีที่สุด"
+      },
+      "growth": {
+        "title": "การเติบโต",
+        "description": "เราช่วยให้ลูกค้าและทีมงานเติบโตไปด้วยกันในยุคดิจิทัล"
+      }
+    },
+    "team": {
+      "title": "ทีมผู้นำของเรา",
+      "subtitle": "ผู้เชี่ยวชาญด้านเทคโนโลยีและธุรกิจที่มีประสบการณ์กว่า 200 ปีรวมกัน"
+    },
+    "cta": {
+      "title": "พร้อมเริ่มต้นการเปลี่ยนแปลงกับเราแล้วหรือยัง?",
+      "subtitle": "มาร่วมเป็นส่วนหนึ่งของการปฏิวัติดิจิทัลไปกับ F2XSaaS",
+      "freeConsultation": "นัดหมายปรึกษาฟรี",
+      "viewPlans": "ดูแผนการใช้งาน"
+    }
+  },
+  "resources": {
+    "title": "ทรัพยากร ความรู้ เพื่อการเปลี่ยนแปลง",
+    "subtitle": "คลังความรู้ที่ครบครันสำหรับการปรับเปลี่ยนองค์กรสู่ยุคดิจิทัล พร้อมคู่มือ กรณีศึกษา และเครื่องมือที่คุณต้องการ",
+    "searchPlaceholder": "ค้นหาทรัพยากร...",
+    "filterResults": "กรองผลลัพธ์",
+    "featuredResources": "ทรัพยากรแนะนำ",
+    "allResources": "ทรัพยากรทั้งหมด",
+    "categories": {
+      "all": "ทั้งหมด",
+      "guides": "คู่มือ",
+      "caseStudies": "กรณีศึกษา",
+      "whitepapers": "รายงานวิจัย",
+      "webinars": "เว็บินาร์",
+      "tools": "เครื่องมือ"
+    },
+    "types": {
+      "guide": "คู่มือ",
+      "caseStudy": "กรณีศึกษา",
+      "whitepaper": "รายงานวิจัย",
+      "webinar": "เว็บินาร์",
+      "tool": "เครื่องมือ"
+    },
+    "noResults": "ไม่พบทรัพยากรที่ตรงกับการค้นหา",
+    "noResultsDescription": "ลองใช้คำค้นหาอื่น หรือเลือกหมวดหมู่อื่น",
+    "resetSearch": "รีเซ็ตการค้นหา",
+    "download": "ดาวน์โหลด",
+    "watchWebinar": "ดูเว็บินาร์",
+    "useTool": "ใช้เครื่องมือ",
+    "quickTools": {
+      "title": "เครื่องมือด่วน",
+      "subtitle": "เครื่องมือที่ช่วยประเมินและวางแผนการปรับเปลี่ยนองค์กร",
+      "assessment": {
+        "title": "Digital Readiness Assessment",
+        "description": "ประเมินความพร้อมขององค์กรสำหรับการปรับเปลี่ยนดิจิทัล",
+        "button": "เริ่มประเมิน"
+      },
+      "roiCalculator": {
+        "title": "ROI Calculator",
+        "description": "คำนวณผลตอบแทนการลงทุนในโครงการ AI และระบบอัตโนมัติ",
+        "button": "คำนวณ ROI"
+      },
+      "checklist": {
+        "title": "Implementation Checklist",
+        "description": "รายการตรวจสอบสำหรับการดำเนินโครงการเปลี่ยนแปลงดิจิทัล",
+        "button": "ดาวน์โหลดเช็คลิสต์"
+      }
+    },
+    "newsletter": {
+      "title": "อัปเดตทรัพยากรใหม่ทุกสัปดาห์",
+      "subtitle": "รับข่าวสารและทรัพยากรใหม่ล่าสุดเกี่ยวกับ Digital Transformation",
+      "placeholder": "อีเมลของคุณ",
+      "subscribe": "สมัครรับข่าวสาร",
+      "noSpam": "เราจะไม่ส่งสแปม และคุณสามารถยกเลิกได้ทุกเมื่อ"
+    }
+  },
+  "contact": {
+    "title": "ติดต่อเรา",
+    "subtitle": "พร้อมให้คำปรึกษาและช่วยเหลือคุณในการปรับเปลี่ยนดิจิทัล",
+    "form": {
+      "name": "ชื่อ-นามสกุล",
+      "email": "อีเมล",
+      "company": "บริษัท",
+      "phone": "เบอร์โทรศัพท์",
+      "subject": "หัวข้อ",
+      "message": "ข้อความ",
+      "send": "ส่งข้อความ",
+      "sending": "กำลังส่ง..."
+    },
+    "info": {
+      "address": {
+        "title": "สำนักงานใหญ่",
+        "value": "123 ถนนสีลม แขวงสีลม เขตบางรัก กรุงเทพมหานคร 10500"
+      },
+      "phone": {
+        "title": "ติดต่อเรา",
+        "value": "โทร: 02-123-4567"
+      },
+      "social": {
+        "title": "ติดตามเรา"
+      }
+    }
+  },
+  "errors": {
+    "404": {
+      "title": "ไม่พบหน้าที่คุณต้องการ",
+      "description": "ขออภัย หน้าที่คุณกำลังมองหาไม่มีอยู่หรือถูกย้ายไปแล้ว",
+      "backHome": "กลับหน้าแรก"
+    },
+    "500": {
+      "title": "เกิดข้อผิดพลาดภายในเซิร์ฟเวอร์",
+      "description": "เกิดข้อผิดพลาดในระบบ กรุณาลองใหม่อีกครั้งภายหลัง",
+      "retry": "ลองใหม่"
+    }
+  },
+  "validation": {
+    "required": "กรุณากรอก{field}",
+    "email": "รูปแบบอีเมลไม่ถูกต้อง",
+    "minLength": "{field}ต้องมีอย่างน้อย {min} ตัวอักษร",
+    "maxLength": "{field}ต้องมีไม่เกิน {max} ตัวอักษร",
+    "passwordMismatch": "รหัสผ่านไม่ตรงกัน",
+    "invalidPhone": "เบอร์โทรศัพท์ไม่ถูกต้อง"
+  }
+}
